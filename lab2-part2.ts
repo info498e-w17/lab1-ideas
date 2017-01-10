@@ -1,7 +1,4 @@
 
-/**
- * name
- */
 class bankSaving {
     private balance:number;
     private name:string;
