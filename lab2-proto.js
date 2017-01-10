@@ -14,7 +14,7 @@ var Account = {
   checkBalance: function (amount) {
     console.log(`${this.owner} account balance: $${this.balance}`);
   }
-}
+} 
 
 
 
