@@ -8,12 +8,12 @@ class SavingsAccount {
     }
 
     deposit(amount: number) {
-        this.balance = this.balance + amount;
+        this.balance += amount;
     }
     withdraw(amount: number) {
-        this.withdrawals = this.withdrawals + 1;
         if (this.withdrawals <= 3) {
-            this.balance = this.balance - amount;
+            this.withdrawals++;
+            this.balance -= amount;
         } else {
             console.log("You've exceed 3 withdrawals");
         }
